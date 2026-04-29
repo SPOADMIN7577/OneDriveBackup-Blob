@@ -175,16 +175,6 @@ with right_col:
     current_file_box = st.empty()
     progress_bar = st.progress(0)
 
-    if st.session_state.copy_done:
-        st.download_button(
-            label="⬇ Download Copy Report",
-            data="\n".join(st.session_state.report_data),
-            file_name="onedrive_blob_copy_report.csv",
-            mime="text/plain"
-        )
-    else:
-        st.button("⬇ Download Copy Report", disabled=True)
-
     st.markdown('</div>', unsafe_allow_html=True)
 
 # -------------------------------------------------
