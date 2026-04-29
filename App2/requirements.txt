@@ -1,1 +1,2 @@
 msal
+azure.storage.blob
